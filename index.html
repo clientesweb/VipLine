@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Intercoastal Car Detailing - Elite Auto Detailing in Port Charlotte, Florida</title>
+    <meta name="description" content="Professional auto detailing services in Port Charlotte, Florida. Specialists in washing, waxing, paint correction, and ceramic coating for your vehicle.">
+    <meta name="keywords" content="auto detailing, Port Charlotte, Florida, car wash, waxing, paint correction, ceramic coating">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#FF6B6B">
+    <meta name="msapplication-TileColor" content="#FF6B6B">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clientesweb.github.io/IntercoastalDetailingVipWeb/">
+    <meta property="og:title" content="Intercoastal Car Detailing - Elite Auto Detailing in Port Charlotte, Florida">
+    <meta property="og:description" content="Professional auto detailing services in Port Charlotte, Florida. Specialists in washing, waxing, paint correction, and ceramic coating for your vehicle.">
+    <meta property="og:image" content="https://clientesweb.github.io/IntercoastalDetailingVipWeb/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://clientesweb.github.io/IntercoastalDetailingVipWeb/">
+    <meta property="twitter:title" content="Intercoastal Car Detailing - Elite Auto Detailing in Port Charlotte, Florida">
+    <meta property="twitter:description" content="Professional auto detailing services in Port Charlotte, Florida. Specialists in washing, waxing, paint correction, and ceramic coating for your vehicle.">
+    <meta property="twitter:image" content="https://clientesweb.github.io/IntercoastalDetailingVipWeb/logo.png">
+
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+    --primary-color: #000000; /* Color coral del nuevo logo */
+    --secondary-color: #FF6B6B; /* Negro del logo */
+    --accent-color: #FF8585; /* Color de acento derivado del primario */
+}
+
+.gradient-bg {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+}
+
+.app-gradient-bg {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cpath d='M0 0h200v200H0z' fill='%23f7fafc'/%3E%3Cg fill='%23FF6B6B' fill-opacity='0.05'%3E%3Cpath d='M100 0c11 0 20 9 20 20s-9 20-20 20-20-9-20-20 9-20 20-20zM0 100c11 0 20 9 20 20s-9 20-20 20v-40zM200 100c-11 0-20 9-20 20s9 20 20 20v-40zM100 200c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20z'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+#top-banner {
+    background: var(--primary-color);
+    overflow: hidden;
+}
+
+#top-banner .banner-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+#top-banner .banner-item {
+    flex: 0 0 100%;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.text-primary-color {
+    color: var(--primary-color);
+}
+
+.bottom-menu {
+    background: var(--primary-color);
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    margin-bottom: env(safe-area-inset-bottom);
+}
+
+.instagram-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.instagram-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tarjetas de Servicio */
+.service-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    z-index: 2;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-bg {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.service-card button {
+    position: relative;
+    z-index: 3;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.service-card button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h2, .service-card h3, .service-card p {
+    position: relative;
+    z-index: 2;
+}
+
+h2.text-primary-color {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .service-card button {
+        width: 100%;
+    }
+}
+
+.testimonials-auto-scroll {
+    animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.footer-spacing {
+    padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    gap: 0.75rem;
+}
+
+.filter-btn {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    min-width: 120px;
+    text-align: center;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .filter-btn {
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-btn {
+        min-width: 80px;
+    }
+}
+
+.gallery-item {
+    animation: fadeIn 0.5s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 640px) {
+    .filter-container {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery-item {
+        flex: 1 0 calc(33.33% - 1.5rem);
+    }
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.preloader-logo {
+    width: 150px;
+    height: auto;
+    animation: pulse 1.5s infinite;
+}
+
+.preloader-text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--primary-color);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+}
+
+.floating-btn.whatsapp {
+    background-color: #25D366;
+    bottom: 90px;
+}
+
+.floating-btn.book-now {
+    background-color: var(--primary-color);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ad-banner {
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+}
+
+.ad-banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ad-banner-image {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ad-banner-text {
+    width: 45%;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem 0;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    margin-top: 1rem;
+    display: none;
+}
+
+.faq-answer.active {
+    display: block;
+}
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="img/logo.png" alt="Intercoastal Car Detailing Logo" class="preloader-logo">
+        <div class="preloader-text">Bringing the Shine To Your Sunshine</div>
+    </div>
+
+    <!-- Top Banner with CTAs -->
+    <div id="top-banner" class="py-2 text-white relative">
+        <div class="banner-content flex">
+            <div class="banner-item flex items-center justify-center w-full">
+                <span class="mr-4">🎉 20% off all services this month!</span>
+                <a href="#services" class="bg-white text-primary-color px-4 py-2 rounded-full text-sm font-bold hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg">View Offers</a>
+            </div>
+            <div class="banner-item flex items-center justify-center w-full">
+                <span class="mr-4">🌟 New ceramic coating service available</span>
+                <a href="#services" class="bg-white text-primary-color px-4 py-2 rounded-full text-sm font-bold hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg">Learn More</a>
+            </div>
+            <div class="banner-item flex items-center justify-center w-full">
+                <span class="mr-4">🚗 Book your appointment today and get a free wash</span>
+                <a href="#contact" class="bg-white text-primary-color px-4 py-2 rounded-full text-sm font-bold hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 gradient-bg bg-opacity-90 backdrop-blur-md z-40">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center">
+                    <img src="img/logo.png" alt="Intercoastal Car Detailing Logo" class="h-16 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#about" class="text-white hover:text-secondary-color transition">About</a>
+                    <a href="#services" class="text-white hover:text-secondary-color transition">Services</a>
+                    <a href="#gallery" class="text-white hover:text-secondary-color transition">Gallery</a>
+                    <a href="#testimonials" class="text-white hover:text-secondary-color transition">Testimonials</a>
+                    <a href="#contact" class="text-white hover:text-secondary-color transition">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-white hover:text-secondary-color transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-secondary-color transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-secondary-color transition"><i class="fab fa-twitter"></i></a>
+                    <button id="mobileMenuBtn" class="md:hidden text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 gradient-bg bg-opacity-95 z-50 hidden">
+        <div class="flex flex-col items-center justify-center h-full">
+            <a href="#about" class="text-white text-xl mb-4">About</a>
+            <a href="#services" class="text-white text-xl mb-4">Services</a>
+            <a href="#gallery" class="text-white text-xl mb-4">Gallery</a>
+            <a href="#testimonials" class="text-white text-xl mb-4">Testimonials</a>
+            <a href="#contact" class="text-white text-xl mb-4">Contact</a>
+            <button id="closeMobileMenu" class="text-white mt-8">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section with Instagram Reel Video -->
+        <section id="hero" class="relative h-screen">
+            <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 flex items-center justify-center z-20">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Elite Auto Detailing</h1>
+                    <p class="text-xl md:text-2xl mb-8 text-white">Transforming your vehicle with precision and passion in Port Charlotte, Florida.</p>
+                    <a href="#services" class="gradient-bg text-white px-6 py-2 rounded-full hover:opacity-90 transition">Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-color" data-aos="fade-up">About Us</h2>
+                <div class="flex flex-col items-center">
+                    <div class="w-full max-w-3xl mb-8" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-lg mb-4 text-center">Intercoastal Car Detailing is your trusted destination for high-quality automotive care in Port Charlotte, Florida. We take pride in offering detailing services that go beyond expectations.</p>
+                        <p class="text-lg mb-4 text-center">Our team of highly trained professionals uses advanced techniques and top-quality products to ensure your vehicle receives the best care possible.</p>
+                    </div>
+            <div class="w-full max-w-6xl flex justify-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="relative w-full max-w-5xl aspect-[16/9]">
+                    <!-- Main image (left) -->
+                    <div class="absolute left-0 top-0 w-[58%] h-full">
+                        <img 
+                            src="img/about.png"
+                            alt="Professional detailer polishing a car" 
+                            class="w-full h-full object-cover rounded-lg"
+                        />
+                    </div>
+                    <!-- Overlapping image (right) -->
+                    <div class="absolute right-0 bottom-0 w-[50%] h-[85%]">
+                        <img 
+                            src="img/about1.png"
+                            alt="Luxury car leather interior detail" 
+                            class="w-full h-full object-cover rounded-lg"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Services Section with Full-Width Cards -->
+<section id="services" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center text-primary-color" data-aos="fade-up">Our Services</h2>
+        
+        <!-- Service 1: Premium Wash & Wax -->
+        <div class="service-card bg-cover bg-center text-white py-24 px-8 mb-6 rounded-lg shadow-lg" style="background-image: url('img/service1.jpg');" data-aos="fade-right">
+            <h3 class="text-3xl font-bold mb-2">Premium Wash & Wax</h3>
+            <p class="mb-4">Complete wash and wax service that leaves your vehicle shining.</p>
+            <button class="modal-trigger view-service gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition" data-service="wash">
+                View Details
+            </button>
+        </div>
+        
+        <!-- Service 2: Interior Detailing -->
+        <div class="service-card bg-cover bg-center text-white py-24 px-8 mb-6 rounded-lg shadow-lg" style="background-image: url('img/service2.jpg');" data-aos="fade-left">
+            <h3 class="text-3xl font-bold mb-2">Interior Detailing</h3>
+            <p class="mb-4">Deep cleaning and restoration of your vehicle's interior.</p>
+            <button class="modal-trigger view-service gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition" data-service="interior">
+                View Details
+            </button>
+        </div>
+        
+        <!-- Service 3: Paint Correction -->
+        <div class="service-card bg-cover bg-center text-white py-24 px-8 mb-6 rounded-lg shadow-lg" style="background-image: url('img/service3.jpg');" data-aos="fade-right">
+            <h3 class="text-3xl font-bold mb-2">Paint Correction</h3>
+            <p class="mb-4">Removal of scratches and restoration of original shine.</p>
+            <button class="modal-trigger view-service gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition" data-service="paint">
+                View Details
+            </button>
+        </div>
+        
+        <!-- Service 4: Ceramic Coating -->
+        <div class="service-card bg-cover bg-center text-white py-24 px-8 mb-6 rounded-lg shadow-lg" style="background-image: url('img/service4.jpg');" data-aos="fade-left">
+            <h3 class="text-3xl font-bold mb-2">Ceramic Coating</h3>
+            <p class="mb-4">Long-lasting ceramic coating for ultimate paint protection.</p>
+            <button class="modal-trigger view-service gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition" data-service="ceramic">
+                View Details
+            </button>
+        </div>
+    </div>
+</section>
+
+        <!-- Gallery Section with Enhanced Details -->
+        <section id="gallery" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-color" data-aos="fade-up">Our Gallery</h2>
+                
+                <!-- Filter buttons container -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="wash">Wash</button>
+                    <button class="filter-btn" data-filter="interior">Interior</button>
+                    <button class="filter-btn" data-filter="paint">Paint</button>
+                    <button class="filter-btn" data-filter="ceramic">Ceramic</button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Gallery Item -->
+                    <div class="gallery-item" data-category="wash" data-images='[
+                        "https://images.unsplash.com/photo-1605618313023-d810c2b49e32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                        "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                        "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    ]' data-description="Complete wash and wax process for a 2023 BMW M3. Includes deep cleaning, minor paint correction, and protective waxing.">
+                        <img src="https://images.unsplash.com/photo-1605618313023-d810c2b49e32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="BMW M3 Wash" class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-2">BMW M3 Full Detail</h3>
+                            <p class="text-sm text-gray-600 mb-4">Premium wash and wax service</p>
+                            <button class="view-work gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition">View Work</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item -->
+                    <div class="gallery-item" data-category="interior" data-images='[
+                        "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                        "https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                        "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    ]' data-description="Complete interior detailing of a luxury SUV. Includes deep upholstery cleaning, leather treatment, and total sanitization.">
+                        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="SUV Interior Detailing" class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-2">SUV Interior Renovation</h3>
+                            <p class="text-sm text-gray-600 mb-4">Premium interior detailing</p>
+                            <button class="view-work gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition">View Work</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item -->
+                    <div class="gallery-item" data-category="paint" data-images='[
+                        "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                        "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                        "https://images.unsplash.com/photo-1612825173281-9a193378527e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    ]' data-description="Paint correction on a Porsche 911. Removal of deep scratches, polishing, and application of high-end wax.">
+                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Porsche Paint Correction" class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-2">Porsche 911 Restoration</h3>
+                            <p class="text-sm text-gray-600 mb-4">Professional paint correction</p>
+                            <button class="view-work gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition">View Work</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item -->
+                    <div class="gallery-item" data-category="ceramic" data-images='[
+                        "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                        "https://images.unsplash.com/photo-1612825173281-9a193378527e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                        "https://images.unsplash.com/photo-1605618313023-d810c2b49e32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    ]' data-description="Application of ceramic coating on a Tesla Model S. Long-lasting protection against the elements and exceptional shine.">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tesla Ceramic Coating" class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-2">Tesla Ceramic Protection</h3>
+                            <p class="text-sm text-gray-600 mb-4">High-end ceramic coating</p>
+                            <button class="view-work gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition">View Work</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Banner Publicitario -->
+<section class="ad-banner">
+    <div class="container mx-auto px-4">
+        <div class="ad-banner-content">
+            <img src="img/oferta.png" alt="Ceramic coating being applied to a car" class="ad-banner-image">
+            <div class="ad-banner-text">
+                <h2 class="text-3xl font-bold mb-4">Limited Time Offer!</h2>
+                <p class="mb-4">Get 15% off on our Ceramic Coating package. Protect your car's paint for years to come!</p>
+                <a href="#contact" class="gradient-bg text-white px-6 py-2 rounded-full hover:opacity-90 transition">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Instagram Reels Section with Fixed Scroll -->
+        <section id="instagram-reels" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-color" data-aos="fade-up">Our Instagram Reels</h2>
+                <div class="instagram-container">
+                    <div class="flex space-x-4">
+                        <!-- Instagram Reel Cards -->
+                        <div class="flex-none w-80">
+                            <iframe src="https://www.instagram.com/reel/C_3dF8JvpSe/embed" class="w-full h-[600px] rounded-lg shadow-lg" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                        <div class="flex-none w-80">
+                            <iframe src="https://www.instagram.com/reel/C9ujSJzu7Ec/embed" class="w-full h-[600px] rounded-lg shadow-lg" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                        <div class="flex-none w-80">
+                            <iframe src="https://www.instagram.com/reel/C82W1aWOwNJ/embed" class="w-full h-[600px] rounded-lg shadow-lg" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Video Section -->
+        <section id="youtube-video" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-color" data-aos="fade-up">Our YouTube Channel</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 bg-gray-100 overflow-hidden">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-color" data-aos="fade-up">What Our Clients Say</h2>
+                <div class="relative">
+                    <div class="testimonials-auto-scroll flex">
+                        <!-- Testimonial Cards -->
+                        <div class="flex-none w-96 p-4">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <div class="flex items-center mb-4">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h3 class="font-semibold">Sarah Johnson</h3>
+                                        <div class="flex text-yellow-400">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>"Exceptional service. My car looked like new after their detailing. Highly recommended!"</p>
+                            </div>
+                        </div>
+                        <div class="flex-none w-96 p-4">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <div class="flex items-center mb-4">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h3 class="font-semibold">Michael Brown</h3>
+                                        <div class="flex text-yellow-400">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>"The ceramic coating they applied is amazing. My car still looks brand new after months!"</p>
+                            </div>
+                        </div>
+                        <div class="flex-none w-96 p-4">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <div class="flex items-center mb-4">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h3 class="font-semibold">Emily Davis</h3>
+                                        <div class="flex text-yellow-400">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>"Incredible attention to detail. They truly care about your vehicle and it shows in their work."</p>
+                            </div>
+                        </div>
+                        <!-- Repeat testimonials for continuous scroll effect -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faqs" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-color" data-aos="fade-up">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How long does a full detailing service take?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A full detailing service typically takes between 4-8 hours, depending on the size of the vehicle and the level of detailing required. For more extensive services like paint correction or ceramic coating, it may take longer.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How often should I get my car detailed?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We recommend getting your car detailed every 4-6 months to maintain its appearance and protect the paint. However, this can vary based on your driving habits, environment, and how well you maintain your vehicle between detailing sessions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What's the difference between waxing and ceramic coating?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Waxing provides a temporary layer of protection that typically lasts 1-3 months. Ceramic coating, on the other hand, bonds with the paint at a molecular level, offering superior protection against UV rays, chemicals, and minor scratches for 2-5 years.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary-color" data-aos="fade-up">Contact Us</h2>
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+                        <form id="contact-form" class="space-y-4" action="https://formspree.io/f/your-formspree-id" method="POST">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-color" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-color" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-color" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="w-full md:w-1/2 px-4">
+                        <div class="h-64 md:h-full rounded-lg overflow-hidden">
+                            <!-- Update the Google Maps embed code for Port Charlotte, Florida -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114884.73909860112!2d-82.17931121254133!3d26.979363590917534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c4f1d2e7a9f2b7%3A0x5a0c5a6d1b6e7a0!2sPort%20Charlotte%2C%20FL!5e0!3m2!1sen!2sus!4v1619195841760!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12 footer-spacing">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="img/logo.png" alt="Intercoastal Car Detailing Logo" class="h-24 w-auto mb-4">
+                    <p class="text-center md:text-left">Professional auto detailing services in Port Charlotte, Florida.</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <p>1160 Buena Vista Cir, Port Charlotte, Florida, 33953</p>
+                    <p>Phone: +1 (941) 525-2657</p>
+                    <p>Email: <a href="mailto:intercoastaldetailing@gmail.com">intercoastaldetailing@gmail.com</a></p>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                        <a href="#" class="hover:text-secondary-color transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-secondary-color transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-secondary-color transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-center md:text-left">Newsletter</h3>
+                    <form id="newsletter-form" class="flex flex-col space-y-4" action="https://formspree.io/f/your-formspree-id" method="POST">
+                        <input type="email" name="email" placeholder="Your email" class="px-4 py-2 rounded-full text-gray-800" required>
+                        <button type="submit" class="bg-secondary-color text-primary-color px-4 py-2 rounded-full hover:bg-opacity-90 transition">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 Intercoastal Car Detailing. All rights reserved.</p>
+                <p class="mt-2">Bringing the Shine To Your Sunshine</p>
+                <p class="mt-2">Powered by Duality Domain</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp actualizado -->
+    <a href="https://wa.me/19415252657" class="floating-btn whatsapp" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp text-white text-3xl"></i>
+    </a>
+
+    <!-- Botón flotante de Book Now con notificación -->
+<div class="fixed bottom-20 right-5 z-50 flex items-center">
+        <div id="bookNowNotification" class="bg-yellow-400 text-black px-4 py-2 rounded-full mr-2 opacity-0 transition-opacity duration-300 ease-in-out">
+            Book now here!
+        </div>
+        <button id="bookNowBtn" class="floating-btn book-now">
+            <img src="img/logo.png" alt="Book Now" class="w-10 h-10">
+        </button>
+    </div>
+
+    <!-- Modal de reserva -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Book Your Appointment</h2>
+            <form id="booking-form" class="space-y-4" action="https://formspree.io/f/your-formspree-id" method="POST">
+                <div>
+                    <label for="booking-name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" id="booking-name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div>
+                    <label for="booking-email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="booking-email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div>
+                    <label for="booking-phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                    <input type="tel" id="booking-phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div>
+                    <label for="booking-date" class="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
+                    <input type="date" id="booking-date" name="date" class="w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div>
+                    <label for="booking-service" class="block text-sm font-medium text-gray-700 mb-1">Service</label>
+                    <select id="booking-service" name="service" class="w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                        <option value="">Select a service</option>
+                        <option value="wash">Premium Wash & Wax</option>
+                        <option value="interior">Interior Detailing</option>
+                        <option value="paint">Paint Correction</option>
+                        <option value="ceramic">Ceramic Coating</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="booking-message" class="block text-sm font-medium text-gray-700 mb-1">Additional Information</label>
+                    <textarea id="booking-message" name="message" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-md"></textarea>
+                </div>
+                <button type="submit" class="w-full gradient-bg text-white px-4 py-2 rounded-full hover:opacity-90 transition">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
